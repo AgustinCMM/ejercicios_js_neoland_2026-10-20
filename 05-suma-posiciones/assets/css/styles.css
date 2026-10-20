@@ -74,17 +74,11 @@ body {
 }
 
 h1 {
-  margin: 0 0 10px;
+  margin: 0;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.15;
-}
-
-.subtitulo {
-  margin: 0;
-  color: var(--texto-suave);
-  font-size: 1rem;
 }
 
 main {
@@ -120,12 +114,6 @@ main {
   height: 18px;
   border-radius: 999px;
   background: linear-gradient(180deg, var(--acento), var(--acento-2));
-}
-
-.tarjeta h3 {
-  margin: 22px 0 8px;
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
 }
 
 .tarjeta p {
@@ -173,6 +161,10 @@ code {
   font-size: 0.9em;
 }
 
+.codigo + p {
+  margin-top: 16px;
+}
+
 p code,
 li code {
   padding: 2px 6px;
@@ -181,37 +173,6 @@ li code {
   background: var(--acento-suave);
   color: var(--acento-oscuro);
   font-size: 0.88em;
-}
-
-.nota {
-  padding: 15px 18px;
-  border: 1px solid #e4e7ff;
-  border-radius: 12px;
-  background: linear-gradient(180deg, #fafbff, #f5f6ff);
-  color: var(--texto-suave);
-  font-size: 0.93rem;
-}
-
-.tarjeta p.aclaracion {
-  margin: 14px 0 0;
-  color: var(--texto-suave);
-  font-size: 0.9rem;
-}
-
-.pie {
-  max-width: 880px;
-  margin: 26px auto 0;
-  padding: 18px 26px;
-  border: 1px solid var(--borde);
-  border-radius: 14px;
-  background: var(--superficie);
-  box-shadow: var(--sombra);
-  color: var(--texto-suave);
-  font-size: 0.85rem;
-}
-
-.pie p {
-  margin: 0;
 }
 
 @media (max-width: 600px) {

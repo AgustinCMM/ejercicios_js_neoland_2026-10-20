@@ -10,51 +10,21 @@
   <header class="encabezado">
     <p class="etiqueta">Grupo Avanzado B · Agustín Massa</p>
     <h1>Ejercicio 09 · Código inalcanzable</h1>
-    <p class="subtitulo">Lectura de código · if/else if · Flujo de ejecución</p>
   </header>
 
   <main>
     <section class="tarjeta">
       <h2>Consigna</h2>
       <p>
-        Explicá por qué a <code>x</code> nunca se le asignará el valor <code>30</code>,
-        sin importar si empezamos con un <code>15</code>, un <code>50</code> o un
-        <code>100</code>.
+        Código inalcanzable (Unreachable Code): Explica por qué a <code>x</code> nunca
+        se le asignará el valor <code>30</code>, sin importar si empezamos con un
+        <code>15</code>, un <code>50</code> o un <code>100</code>.
       </p>
-
-      <h3>Preguntas para responder</h3>
-      <ul>
-        <li>¿Qué condición se evalúa primero y cuál después?</li>
-        <li>¿Puede llegar a ejecutarse la rama del <code>else if</code>? ¿Por qué?</li>
-        <li>¿Qué valor toma <code>x</code> en cada uno de los tres casos?</li>
-      </ul>
-
-    </section>
-
-    <section class="tarjeta">
-      <h2>Código a analizar</h2>
       <pre class="codigo"><code>let x = 15;
-if (x &gt; 5) {
-    x = 20;
-} else if (x &gt; 10) {
-    x = 30;
-}</code></pre>
-    </section>
-
-    <section class="tarjeta">
-      <h2>Cómo probar</h2>
-      <p class="nota">
-        🖥️ Abrí este archivo en el navegador, presioná <strong>F12</strong> y andá a la
-        pestaña <strong>Console</strong>. El código ya está cargado en
-        <code>assets/js/script.js</code>.
-      </p>
-      <p>Escribí tu explicación como comentarios en <code>assets/js/script.js</code>.</p>
+if (x &gt; 5) { x = 20; }
+else if (x &gt; 10) { x = 30; }</code></pre>
     </section>
   </main>
-
-  <footer class="pie">
-    <p>Ejercicio 09 de 10 · Variables, condicionales y switch</p>
-  </footer>
 
   <script src="assets/js/script.js"></script>
 </body>

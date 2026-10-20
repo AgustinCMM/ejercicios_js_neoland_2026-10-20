@@ -1,11 +1,12 @@
 # Ejercicios · Variables, condicionales y switch
 
-Proyecto de práctica de JavaScript. Reúne los 10 ejercicios
+Proyecto de práctica de JavaScript de la **Clase 6 (2026-10-20)**. Reúne los 10 ejercicios
 asignados al **Grupo Avanzado B**, organizados en carpetas independientes con su consigna,
 sus estilos y su archivo de script listo para completar.
 
-Cada ejercicio está **sin resolver**: el HTML muestra la consigna y el `script.js`
-contiene los `TODO` que indican qué escribir.
+Cada ejercicio está **sin resolver**: el HTML muestra únicamente la consigna y el
+`script.js` queda listo para escribir la solución. En los ejercicios de lectura, el
+script incluye el código de partida que aparece en la consigna.
 
 ## Rutas del proyecto
 
@@ -39,9 +40,9 @@ Cada una de las 10 carpetas repite la misma estructura:
 
 | Archivo | Función |
 |---------|---------|
-| `index.html` | Consigna, indicaciones y estructura de la página. |
+| `index.html` | Consigna y estructura de la página. |
 | `assets/css/styles.css` | Hoja de estilos base del ejercicio. |
-| `assets/js/script.js` | Archivo donde se resuelve el ejercicio (marcado con `TODO`). |
+| `assets/js/script.js` | Archivo de trabajo del ejercicio. |
 
 Cada ejercicio es autocontenido: su HTML, sus estilos y su script viven dentro de su
 propia carpeta y no dependen de los demás.
@@ -81,8 +82,8 @@ Opcional: si usás VS Code, podés abrir la carpeta del proyecto con **Live Serv
 
 ## Convenciones del proyecto
 
-- **HTML**: la consigna está siempre visible dentro de la página, junto con las
-  indicaciones del ejercicio.
+- **HTML**: la consigna está siempre visible dentro de la página, sin indicaciones
+  adicionales.
 - **Rutas**: cada página enlaza `assets/css/styles.css` y `assets/js/script.js`
   con rutas relativas a su propia carpeta.
 - **JS**: el `<script>` se carga al final del `<body>`.
@@ -90,12 +91,12 @@ Opcional: si usás VS Code, podés abrir la carpeta del proyecto con **Live Serv
   independiente del resto.
 - **Salida**: los resultados se muestran en la consola del navegador con `console.log()`.
   En los ejercicios de lectura, `print()` del material equivale a `console.log()`.
-- **Sin soluciones ni pistas**: los archivos solo aportan el entorno de trabajo.
+- **Solo consigna**: no se agregan pasos, pistas, preguntas extra ni soluciones.
 
 ## Detalles y mantenimiento
 
-- Los ejercicios 6 a 10 son de lectura: el código a analizar ya está cargado en
-  `assets/js/script.js` y las preguntas para responder quedan como comentarios al final.
+- Los ejercicios 6 a 10 son de lectura: el código a analizar se muestra en la consigna
+  y también está cargado en `assets/js/script.js`.
 - La estructura es fija: un directorio por ejercicio, con `index.html` y `assets/`
   (que contiene `css/styles.css` y `js/script.js`).
 - Para agregar un ejercicio nuevo: duplicar una carpeta, renombrarla con el prefijo
