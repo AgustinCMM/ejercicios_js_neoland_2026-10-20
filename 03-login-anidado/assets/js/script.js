@@ -23,4 +23,4 @@ if (intentos < 3) {
    console.log("Ha superado el límite de intentos de inicio de sesión");
 }
 
-console.log("Intentos de inicio de sesión: " + intentos);
+console.log("Intentos de inicio de sesión:", intentos);
