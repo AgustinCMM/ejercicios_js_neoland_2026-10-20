@@ -8,8 +8,8 @@
 
 const servidores = [true, false, true];
 
-console.log("Estado inicial de los servidores: " + servidores);
+console.log("Estado inicial de los servidores:", servidores);
 
 servidores[1] = !servidores[1];
 
-console.log("Servidores despues del operador !: " + servidores);
+console.log("Servidores despues del operador !:", servidores);
