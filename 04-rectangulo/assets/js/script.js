@@ -18,6 +18,7 @@ console.log("Área inicial:", area);
 if (area === 200) {
   rectangulo.ancho = 15;
   rectangulo.alto = 10;
+  
   area = rectangulo.ancho * rectangulo.alto;
 } else {
   console.log("El área no es 200, no se modifica.");
