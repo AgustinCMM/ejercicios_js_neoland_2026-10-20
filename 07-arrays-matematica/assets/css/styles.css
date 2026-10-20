@@ -1,0 +1,230 @@
+/* ============================================================
+   Hoja de estilos base · Ejercicios de JavaScript
+   ============================================================ */
+
+:root {
+  --fondo: #f7f8fc;
+  --superficie: #ffffff;
+  --texto: #182135;
+  --texto-suave: #64718a;
+  --borde: #e5e9f2;
+  --acento: #5b5bd6;
+  --acento-2: #8b5cf6;
+  --acento-oscuro: #3f3fa8;
+  --acento-suave: #eef0ff;
+  --codigo-fondo: #101828;
+  --codigo-texto: #e7eefb;
+  --codigo-borde: #22304d;
+  --radio: 18px;
+  --sombra: 0 1px 2px rgba(23, 32, 51, 0.04), 0 14px 34px rgba(23, 32, 51, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 24px 72px;
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: var(--texto);
+  background-color: var(--fondo);
+  background-image:
+    radial-gradient(60rem 32rem at 110% -10%, rgba(139, 92, 246, 0.10), transparent 60%),
+    radial-gradient(50rem 28rem at -10% 0%, rgba(91, 91, 214, 0.10), transparent 55%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.encabezado {
+  max-width: 880px;
+  margin: 48px auto 26px;
+  padding: 38px 42px;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  background-color: var(--superficie);
+  background-image: radial-gradient(20rem 11rem at 100% 0%, rgba(139, 92, 246, 0.09), transparent 70%);
+  box-shadow: var(--sombra);
+}
+
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 7px 14px;
+  border: 1px solid #e0e4ff;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--acento-oscuro);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.etiqueta::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--acento), var(--acento-2));
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.subtitulo {
+  margin: 0;
+  color: var(--texto-suave);
+  font-size: 1rem;
+}
+
+main {
+  display: grid;
+  gap: 26px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  padding: 30px 34px;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  background: var(--superficie);
+  box-shadow: var(--sombra);
+}
+
+.tarjeta h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--texto);
+}
+
+.tarjeta h2::before {
+  content: "";
+  flex: none;
+  width: 4px;
+  height: 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--acento), var(--acento-2));
+}
+
+.tarjeta h3 {
+  margin: 22px 0 8px;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.tarjeta p {
+  margin: 0 0 14px;
+}
+
+.tarjeta p:last-child,
+.tarjeta ul:last-child,
+.tarjeta ol:last-child {
+  margin-bottom: 0;
+}
+
+.tarjeta ul,
+.tarjeta ol {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.tarjeta li {
+  margin-bottom: 7px;
+}
+
+.tarjeta li::marker {
+  color: var(--acento);
+}
+
+.codigo {
+  margin: 4px 0 0;
+  padding: 22px 24px;
+  overflow-x: auto;
+  border: 1px solid var(--codigo-borde);
+  border-radius: 14px;
+  background-color: var(--codigo-fondo);
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 45%);
+  color: var(--codigo-texto);
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  tab-size: 2;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 10px 24px rgba(16, 24, 40, 0.18);
+}
+
+code {
+  font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+p code,
+li code {
+  padding: 2px 6px;
+  border: 1px solid #e3e6ff;
+  border-radius: 6px;
+  background: var(--acento-suave);
+  color: var(--acento-oscuro);
+  font-size: 0.88em;
+}
+
+.nota {
+  padding: 15px 18px;
+  border: 1px solid #e4e7ff;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fafbff, #f5f6ff);
+  color: var(--texto-suave);
+  font-size: 0.93rem;
+}
+
+.tarjeta p.aclaracion {
+  margin: 14px 0 0;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+.pie {
+  max-width: 880px;
+  margin: 26px auto 0;
+  padding: 18px 26px;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  background: var(--superficie);
+  box-shadow: var(--sombra);
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+
+.pie p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 16px 52px;
+  }
+
+  .encabezado {
+    margin-top: 32px;
+    padding: 28px 22px;
+  }
+
+  .tarjeta {
+    padding: 24px 22px;
+  }
+}

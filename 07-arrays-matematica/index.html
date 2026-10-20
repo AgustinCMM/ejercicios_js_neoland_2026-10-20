@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 07 · Interpretación matemática de Arrays | Grupo Avanzado B</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <p class="etiqueta">Grupo Avanzado B · Agustín Massa</p>
+    <h1>Ejercicio 07 · Interpretación matemática de Arrays</h1>
+    <p class="subtitulo">Lectura de código · Índices · Multiplicación</p>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>Consigna</h2>
+      <p>¿Cuál es el resultado exacto que se imprime en el siguiente código?</p>
+
+      <h3>Preguntas para responder</h3>
+      <ul>
+        <li>¿Qué valor tiene cada posición del Array <em>antes</em> de la reasignación?</li>
+        <li>¿Qué número queda en <code>valores[1]</code> y por qué?</li>
+        <li>¿Cambia alguna otra posición del Array?</li>
+      </ul>
+
+    </section>
+
+    <section class="tarjeta">
+      <h2>Código a analizar</h2>
+      <pre class="codigo"><code>let valores = [2, 4, 6];
+valores[1] = valores[0] * valores[2];
+console.log(valores[1]);</code></pre>
+      <p class="aclaracion">
+        <strong>Nota:</strong> en el navegador usamos <code>console.log()</code> en lugar
+        de <code>print()</code>, que es el que aparece en el material.
+      </p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Cómo probar</h2>
+      <p class="nota">
+        🖥️ Abrí este archivo en el navegador, presioná <strong>F12</strong> y andá a la
+        pestaña <strong>Console</strong>. El código ya está cargado en
+        <code>assets/js/script.js</code>.
+      </p>
+      <p>Escribí tu explicación como comentarios en <code>assets/js/script.js</code>.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Ejercicio 07 de 10 · Variables, condicionales y switch</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 06 · Shadowing y ámbito | Grupo Avanzado B</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <p class="etiqueta">Grupo Avanzado B · Agustín Massa</p>
+    <h1>Ejercicio 06 · Shadowing y ámbito</h1>
+    <p class="subtitulo">Lectura de código · let/const · Scope de bloque</p>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>Consigna</h2>
+      <p>
+        ¿Qué valor tiene <code>z</code> en la última línea del código? Explicá a tu
+        pareja qué pasa con la variable <code>w</code>.
+      </p>
+
+      <h3>Preguntas para responder</h3>
+      <ul>
+        <li>¿Qué valor tiene <code>z</code> al terminar la ejecución?</li>
+        <li>¿Qué pasa con <code>w</code> cuando termina el bloque del <code>if</code>?</li>
+        <li>¿Qué ocurre si intentás usar <code>w</code> en la última línea?</li>
+      </ul>
+
+    </section>
+
+    <section class="tarjeta">
+      <h2>Código a analizar</h2>
+      <pre class="codigo"><code>let z = 5;
+if (true) {
+    z = 10;
+    let w = 2;
+}
+z = z * 2;</code></pre>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Cómo probar</h2>
+      <p class="nota">
+        🖥️ Abrí este archivo en el navegador, presioná <strong>F12</strong> y andá a la
+        pestaña <strong>Console</strong>. El código ya está cargado en
+        <code>assets/js/script.js</code>: agregá tus <code>console.log()</code> y comprobá tu
+        respuesta.
+      </p>
+      <p>Escribí tu explicación como comentarios en <code>assets/js/script.js</code>.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Ejercicio 06 de 10 · Variables, condicionales y switch</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

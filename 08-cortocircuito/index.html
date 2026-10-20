@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 08 · Evaluación cortocircuito | Grupo Avanzado B</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <p class="etiqueta">Grupo Avanzado B · Agustín Massa</p>
+    <h1>Ejercicio 08 · Evaluación cortocircuito</h1>
+    <p class="subtitulo">Lectura de código · Operador AND (&amp;&amp;) · División por 0</p>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h2>Consigna</h2>
+      <p>
+        Explicá por qué el programa no se rompe matemáticamente al intentar dividir por
+        <code>0</code> en este caso específico.
+      </p>
+
+      <h3>Preguntas para responder</h3>
+      <ul>
+        <li>¿En qué orden se evalúan los dos operandos de <code>&amp;&amp;</code>?</li>
+        <li>Si el primero es <code>false</code>, ¿se evalúa la división? ¿Por qué?</li>
+        <li>¿Qué pasaría si se invirtiera el orden de las condiciones?</li>
+      </ul>
+
+    </section>
+
+    <section class="tarjeta">
+      <h2>Código a analizar</h2>
+      <pre class="codigo"><code>let divisor = 0;
+if (divisor != 0 &amp;&amp; (100 / divisor) &gt; 5) {
+    console.log("Válido");
+}</code></pre>
+      <p class="aclaracion">
+        <strong>Nota:</strong> en el navegador usamos <code>console.log()</code> en lugar
+        de <code>print()</code>, que es el que aparece en el material.
+      </p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Cómo probar</h2>
+      <p class="nota">
+        🖥️ Abrí este archivo en el navegador, presioná <strong>F12</strong> y andá a la
+        pestaña <strong>Console</strong>. El código ya está cargado en
+        <code>assets/js/script.js</code>.
+      </p>
+      <p>Escribí tu explicación como comentarios en <code>assets/js/script.js</code>.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Ejercicio 08 de 10 · Variables, condicionales y switch</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
