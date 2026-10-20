@@ -8,7 +8,7 @@
 
 const accionesBolsa = [150, 160, 155];
 
-console.log("Valores de acciones: " + accionesBolsa);
+console.log("Valores de acciones:", accionesBolsa);
 
 if (accionesBolsa[2] > accionesBolsa[1] && accionesBolsa[2] > accionesBolsa[0]) {
    console.log("Las acciones de la posisción 2 son mayores que las de la posición 1 y la posición 0");
