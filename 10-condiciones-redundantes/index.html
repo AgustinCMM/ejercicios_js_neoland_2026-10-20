@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="encabezado">
-    <p class="etiqueta">Grupo Avanzado B · Agustín Massa</p>
+    <p class="etiqueta">Grupo Avanzado B</p>
     <h1>Ejercicio 10 · Condiciones redundantes</h1>
   </header>
 
@@ -22,6 +22,17 @@
       </p>
       <pre class="codigo"><code>let esAdmin = true;
 if (esAdmin == true) { print("Panel principal"); }</code></pre>
+    </section>
+    <section class="tarjeta">
+      <h2>Condiciones redundantes</h2>
+      <p>
+        Respuesta:
+        <br>
+        La forma de escribirlo sería sin la comparación == true, ya que una variable booleana, hace eso por defecto. Entonces quedaría así:
+        <br><br>        
+        let esAdmin = true;<br>
+        if (esAdmin) { console.log("Panel principal"); }
+      </p>
     </section>
   </main>
 
