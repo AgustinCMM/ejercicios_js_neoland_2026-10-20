@@ -8,11 +8,11 @@
    ============================================================ */
 
 let intentos = 0;
-let codigo = "1234";
+let codigo = 1234;
 
 if (intentos < 3) {
    switch (codigo) {
-      case '1234':
+      case 1234:
          console.log("Acceso");
          break;
       default:
